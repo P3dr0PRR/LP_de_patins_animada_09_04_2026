@@ -13,6 +13,8 @@
 
   --font-syne: "Syne", sans-serif;
   --font-montserrat: "Montserrat", sans-serif;
+
+  --animate-slide-words: slide-words 6s infinite;
 }
 
 @layer base {
@@ -22,7 +24,7 @@
   h2 {
     @apply text-[24px] md:text-[40px] leading-[120%] font-bold font-syne;
   }
-  span {
+  .text-span {
     @apply text-[12px] md:text-[14px] leading-[150%] font-medium font-montserrat;
   }
 }
@@ -30,5 +32,65 @@
 @layer components {
   .button-label {
     @apply text-[14px] md:text-[16px] leading-[150%] font-medium font-montserrat;
+  }
+}
+
+@keyframes slide-words {
+  0%,
+  22% {
+    transform: translateY(0);
+  }
+  /*Divertida In/Out */
+  23% {
+    transform: translateY(calc(-1lh - 15px));
+  }
+  25% {
+    transform: translateY(calc(-1lh + 15px));
+  }
+  27% {
+    transform: translateY(calc(-1lh - 8px));
+  }
+  29% {
+    transform: translateY(calc(-1lh + 4px));
+  }
+  /*Divertida In/Out */
+  33%,
+  55% {
+    transform: translateY(-1lh);
+  }
+  /*Saudável In/Out */
+  56% {
+    transform: translateY(calc(-2lh - 15px));
+  }
+  58% {
+    transform: translateY(calc(-2lh + 15px));
+  }
+  60% {
+    transform: translateY(calc(-2lh - 8px));
+  }
+  62% {
+    transform: translateY(calc(-2lh + 4px));
+  }
+  /*Saudável In/Out */
+  66%,
+  88% {
+    transform: translateY(-2lh);
+  }
+  /*Radical In/Out */
+  89% {
+    transform: translateY(calc(-3lh - 15px));
+  }
+  91% {
+    transform: translateY(calc(-3lh + 15px));
+  }
+  93% {
+    transform: translateY(calc(-3lh - 8px));
+  }
+  95% {
+    transform: translateY(calc(-3lh + 4px));
+  }
+  /*Radical In/Out */
+  100% {
+    transform: translateY(-3lh);
   }
 }
