@@ -3,7 +3,7 @@ import { Hero } from "./hero/hero";
 
 function App() {
   return (
-    <main>
+    <main className="min-h-screen bg-bg-base">
       <Header />
       <Hero />
     </main>
