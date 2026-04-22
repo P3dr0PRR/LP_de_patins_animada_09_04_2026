@@ -1,9 +1,8 @@
-import img1 from "../imgs/LP de patins animada (Community)/image 01.png";
-import img2 from "../imgs/LP de patins animada (Community)/image 02.png";
-import img3 from "../imgs/LP de patins animada (Community)/image 03.png";
-import img4 from "../imgs/LP de patins animada (Community)/image 04.png";
-
-import person from "../imgs/LP de patins animada (Community)/person.png";
+import img1 from "../assets/imgs/LP de patins animada (Community)/image 01.png";
+import img2 from "../assets/imgs/LP de patins animada (Community)/image 02.png";
+import img3 from "../assets/imgs/LP de patins animada (Community)/image 03.png";
+import img4 from "../assets/imgs/LP de patins animada (Community)/image 04.png";
+import person from "../assets/imgs/LP de patins animada (Community)/person.png";
 
 export function Gallery() {
   return (
