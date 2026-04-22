@@ -16,6 +16,8 @@
 
   --animate-slide-words: slide-words 6s 3s infinite;
   --animate-slideIn: slideIn 3s ease both;
+  --animate-bannerSlide: bannerSlide 10s linear infinite;
+  --animate-bg-gradient-animate: bg-gradient-animate 20s ease infinite;
 }
 
 @layer base {
@@ -33,6 +35,18 @@
   }
   .text-span {
     @apply text-[12px] md:text-[14px] leading-[150%] font-medium font-montserrat;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-animate {
+    background: linear-gradient(
+      45deg,
+      var(--color-snitap-sky-light),
+      var(--color-snitap-joy-light)
+    );
+    background-size: 400%;
+    background-position: 0 50%;
   }
 }
 
@@ -99,5 +113,23 @@
   }
   to {
     transform: translateX(0);
+  }
+}
+
+@keyframes bannerSlide {
+  to {
+    transform: translateX(-17%);
+  }
+}
+
+@keyframes bg-gradient-animate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }

@@ -15,7 +15,7 @@ export function Hero() {
           <span className="overflow-hidden h-[1lh] inline-block w-max align-bottom">
             <span className="flex flex-col animate-slide-words">
               <span className="text-snitap-sky-mid">Radical</span>
-              
+
               <span className="text-snitap-joy-mid">Divertida</span>
               <span className="text-snitap-leaf-mid">Saudável</span>
               <span className="text-snitap-sky-mid">Radical</span>
@@ -44,7 +44,7 @@ export function Hero() {
           </a>
         </div>
       </div>
-      <div className="w-full md:shrink-0 md:w-[30.5rem] h-[30.5rem]">
+      <div className="w-full md:shrink-0 h-[26rem] md:h-[30.5rem] md:w-[30.5rem]  overflow-hidden">
         <div className="relative w-full h-full">
           <img
             src={elipse}

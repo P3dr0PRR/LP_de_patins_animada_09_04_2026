@@ -1,6 +1,7 @@
 import { Header } from "./header/header";
 import { Hero } from "./hero/hero";
 import { Banner } from "./banner/banner";
+import { Gallery } from "./assets/gallery/gallery";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <Hero />
       <Banner />
+      <Gallery />
     </main>
   );
 }
