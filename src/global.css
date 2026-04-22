@@ -18,6 +18,7 @@
   --animate-slideIn: slideIn 3s ease both;
   --animate-bannerSlide: bannerSlide 10s linear infinite;
   --animate-bg-gradient-animate: bg-gradient-animate 20s ease infinite;
+  --animate-image-appear: image-appear 0.5s ease-out both;
 }
 
 @layer base {
@@ -131,5 +132,16 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@keyframes image-appear {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
