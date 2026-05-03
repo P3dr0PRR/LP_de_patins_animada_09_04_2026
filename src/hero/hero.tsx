@@ -12,7 +12,7 @@ export function Hero() {
       <div className="space-y-[3rem]">
         <h1 className="mr-2">
           Your life more
-          <span className="overflow-hidden h-[1lh] inline-block w-max align-bottom">
+          <span className="overflow-hidden h-[1lh] inline-block w-max align-bottom md:ml-3">
             <span className="flex flex-col animate-slide-words">
               <span className="text-snitap-sky-mid">Radical</span>
 
