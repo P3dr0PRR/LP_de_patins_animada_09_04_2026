@@ -24,19 +24,19 @@ export function Footer() {
             href="#"
             className="button-label relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-snitap-sky-mid after:scale-x-0 hover:after:scale-x-100 after:origin-center after:transition-all after:duration-300"
           >
-            Sobre
+            About
           </a>
           <a
             href="#"
             className="button-label relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-snitap-sky-mid after:scale-x-0 hover:after:scale-x-100 after:origin-center after:transition-all after:duration-300"
           >
-            Nossas lojas
+            Our stores
           </a>
           <a
             href="#"
             className="button-label relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-snitap-sky-mid after:scale-x-0 hover:after:scale-x-100 after:origin-center after:transition-all after:duration-300"
           >
-            Política de privacidade
+            Privacy Policy
           </a>
         </nav>
 
@@ -68,7 +68,7 @@ export function Footer() {
         </div>
       </div>
       <h3 className="text-center">
-        Desenvolvido por Pedro Paulo <br></br>em 2026
+        Developed by Pedro Paulo <br></br>in 2026
       </h3>
     </section>
   );
